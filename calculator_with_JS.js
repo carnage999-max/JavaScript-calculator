@@ -40,6 +40,10 @@ if (operation==="4"){
   console.log(`You divided ${div1} by ${div2} and it resulted to ${div_solution}`);
   alert(`${div1} / ${div2} equals ${div_solution}`);
 }
+else{
+  alert("You've entered an invalid operation");
+  console.log("You entered an invalid/non-existent operation");
+}
 var exit = prompt("Do you want to perform another calculation?\n Enter '0' to exit \n Enter '1' to continue");
 
 if (exit === '0'){
