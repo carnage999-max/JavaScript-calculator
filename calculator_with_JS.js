@@ -36,6 +36,10 @@ if (operation==="4"){
   var div1, div2;
   div1 = Number(prompt("Enter your first number"));
   div2 = Number(prompt("Enter your second number"));
+  if(div2 == 0) {
+    alert("You cannot divide by zero!");
+    console.log("A zero devision error was encountered ");
+  }
   div_solution = div1 / div2;
   console.log(`You divided ${div1} by ${div2} and it resulted to ${div_solution}`);
   alert(`${div1} / ${div2} equals ${div_solution}`);
@@ -49,6 +53,7 @@ var exit = prompt("Do you want to perform another calculation?\n Enter '0' to ex
 if (exit === '0'){
   break;
 }
+
 else{
   continue;
 }
